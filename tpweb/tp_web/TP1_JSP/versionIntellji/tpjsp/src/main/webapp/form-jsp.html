@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire Personne</title>
+</head>
+<body>
+<h1>Saisie des informations</h1>
+
+<form action="Controller" method="POST">
+    <label>Prénom : </label>
+    <input type="text" name="firstName" required><br><br>
+
+    <label>Nom : </label>
+    <input type="text" name="lastName" required><br><br>
+
+    <label>Date de naissance (mm/dd/yyyy) : </label>
+    <input type="text" name="birthDay" required><br><br>
+
+    <label>Sexe : </label>
+    <input type="radio" name="sex" value="Masculin" id="m" required>
+    <label for="m">Masculin</label>
+
+    <input type="radio" name="sex" value="Féminin" id="f">
+    <label for="f">Féminin</label><br><br>
+
+    <input type="submit" value="Envoyer">
+</form>
+</body>
+</html>

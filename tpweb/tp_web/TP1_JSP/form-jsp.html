@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire vers JSP</title>
+</head>
+<body>
+    <h1>Formulaire Personne</h1>
+    <form action="bean.jsp" method="POST">
+        <label>Prénom : <input type="text" name="firstName" required></label><br><br>
+        <label>Nom : <input type="text" name="lastName" required></label><br><br>
+        <label>Date de naissance (mm/dd/yyyy) : <input type="text" name="birthDay" required></label><br><br>
+        
+        <label>Sexe :</label>
+        <input type="radio" name="sex" value="M" id="male" required>
+        <label for="male">Masculin</label>
+        <input type="radio" name="sex" value="F" id="female">
+        <label for="female">Féminin</label><br><br>
+        
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
